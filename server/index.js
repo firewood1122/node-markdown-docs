@@ -34,10 +34,14 @@ app.get('*.md', async (req, res, next) => {
 async function start() {
     let config = {};
     if (await existsAsync(configPath)) {
-        config = JSON.parse(await readAsync(configPath));
+        try {
+            config = JSON.parse(await readAsync(configPath));
+        } catch(e) {
+            consola.log('configure has wrong: ', e);
+        }
     }
     const host = config.host ? config.host : '127.0.0.1';
-    const port = config.host ? config.port : 3001;
+    const port = config.port ? config.port : 3001;
 
     app.set('port', port);
     app.set('views', path.join(__dirname, './views'));
