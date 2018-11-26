@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('./check_versions')();
 const program = require('commander');
 const pkg = require('../package');
 
