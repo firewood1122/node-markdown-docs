@@ -37,3 +37,7 @@ npm run docs
 |:----:|:----:|:----:|
 | host | 服务host | 127.0.0.1 |
 | port | 服务port | 3001 |
+
+### markdown文件路径
+
+相对项目根目录，编写绝对路径：[README.md - /README.md](/README.md)

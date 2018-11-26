@@ -1,6 +1,6 @@
 {
   "name": "node-markdown-docs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "add markdown docs for node.js project",
   "main": "./bin/index.js",
   "scripts": {
