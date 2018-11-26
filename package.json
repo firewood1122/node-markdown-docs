@@ -1,0 +1,29 @@
+{
+  "name": "node-markdown-docs",
+  "version": "1.0.1",
+  "description": "add markdown docs for node.js project",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "node ./bin/index.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:firewood1122/node-markdown-docs.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "firewood.lv",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "consola": "^2.2.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "markdown-it": "^8.4.2",
+    "opn": "^5.4.0"
+  },
+  "bin": {
+    "md-server": "./bin/index.js"
+  }
+}
