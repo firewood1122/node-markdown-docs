@@ -1,8 +1,11 @@
 {
-  "name": "node-markdown-docs",
-  "version": "1.0.4",
+  "name": "@plutojs/node-markdown-docs",
+  "version": "1.0.5",
   "description": "add markdown docs for node.js project",
   "main": "./bin/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "node ./bin/index.js start"
   },
